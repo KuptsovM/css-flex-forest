@@ -8,9 +8,15 @@
     <title>Document</title>
     <style>
         
+        @font-face {
+            font-family: 'gg';
+            src: url(YupiTONRegular.ttf);
+        }
+
         *{
             margin: 0;
             padding: 0;
+            font-family: 'gg';
             
         }
 
@@ -76,6 +82,73 @@
             
             
         }
+
+
+        .about{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                
+                height: 700px;
+            }
+
+            .row-i{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                
+                
+                flex-wrap: wrap;
+            }
+
+            .row-i  [class^="item"]{
+                padding: 5px;
+                
+                border-radius: 100px;
+                
+                
+                height: 300px;
+                width: 300px;
+                margin: 20px;
+                
+            }
+
+            .item1{
+                background-image: url(20.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 98%;
+                
+            }
+            .item2{
+                background-image: url(63.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 98%;
+                
+            }
+            .item3{
+                background-image: url(521.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 98%;
+                
+            }
+
+            
+            .title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .title h1{
+                color: orange;
+            }
+
         .cim{
             display: flex;
             justify-content: center;
@@ -101,7 +174,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: url(5570863.jpg);
+                background: url(spectrum-gradient.svg);
                 background-position: center;
                 background-size: 100%;
                 background-repeat: no-repeat;
@@ -122,6 +195,9 @@
             .img{
                 display: none;
             }
+
+
+
             
         }
 
@@ -140,7 +216,7 @@
 
             <div class="knopka">
 
-                <a class="btn btn-dark" href="">Contant Us</a>
+                <a class="btn btn-dark" href="">Contact Us</a>
 
             </div>
 
@@ -151,7 +227,7 @@
     <div class="center">
 
         <div class="text">
-            <h1>Travel to <br> yout dream <br>destination</h1>
+            <h1>Travel to <br> your dream <br>destination</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
                  Reiciendis, obcaecati vel. Dolore vitae consequuntur unde.</p>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -167,6 +243,31 @@
 
 
         
+
+    </div>
+
+    <div class="about">
+
+        <div class="title">
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit amet<br> consectetur <b>adipisicing </b> elit.<br>  Sed, sint?<br>
+                </p>
+
+                <a class="btn btn-dark" href="">See more</a>
+
+        </div>
+
+
+        <div class="row-i">
+            <div class="item1"></div>
+            
+            <div class="clm">    
+            <div class="item2"></div>
+            <div class="item3"></div>
+            </div>
+            
+
+        </div>
 
     </div>
 
